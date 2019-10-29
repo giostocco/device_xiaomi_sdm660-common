@@ -13,6 +13,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     audio.deep_buffer.media=true \
     audio.offload.min.duration.secs=30 \
     audio.offload.video=true \
+		audio.safemedia.bypass=true \
     vendor.audio.volume.headset.gain.depcal=true \
     persist.dirac.acs.controller=qem \
     persist.dirac.acs.ignore_error=1 \
@@ -26,7 +27,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.bt.a2dp_offload_cap=sbc-aac \
     ro.af.client_heap_size_kbyte=7168 \
     ro.audio.soundfx.dirac=true \
-    ro.config.vc_call_vol_steps=7 \
+    ro.config.vc_call_vol_steps=14 \
     ro.config.media_vol_steps=25 \
     ro.vendor.audio.sdk.fluencetype=fluence \
     ro.vendor.audio.sdk.ssr=false \
@@ -183,6 +184,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Media
 PRODUCT_PROPERTY_OVERRIDES += \
+    debug.stagefright.omx_default_rank.sw-audio=1 \
+    debug.stagefright.omx_default_rank=0 \
     media.aac_51_output_enabled=true \
     media.stagefright.enable-aac=true \
     media.stagefright.enable-http=true \
@@ -285,7 +288,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     ro.surface_flinger.protected_contents=true
     ro.surface_flinger.force_hwc_copy_for_virtual_displays=true \
-    ro.surface_flinger.max_virtual_display_dimension=4096
+    ro.surface_flinger.max_virtual_display_dimension=4096 \
+    ro.surface_flinger.vsync_event_phase_offset_ns=2000000 \
+    ro.surface_flinger.vsync_sf_event_phase_offset_ns=6000000
+
 
 #Storaged
  PRODUCT_PROPERTY_OVERRIDES += \
