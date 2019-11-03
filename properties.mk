@@ -1,3 +1,6 @@
+#Build FP to be picked by both system and vendor
+BUILD_FINGERPRINT := "google/walleye/walleye:8.1.0/OPM1.171019.021/4565141:user/release-keys"
+
 # ART
 PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.dex2oat-filter=speed \
@@ -134,7 +137,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Display
 PRODUCT_PROPERTY_OVERRIDES += \
-    debug.hwui.renderer=skiagl \
+    debug.sf.latch_unsignaled=1 \
     debug.sf.enable_hwc_vds=1 \
     debug.sf.hw=1 \
     debug.sf.disable_backpressure= 1 \

@@ -1,3 +1,38 @@
+# ADSP
+vendor/bin/adsprpcd|8b439846f016decb7519e5fd5cb2c86e192af036
+vendor/lib/libadsp_default_listener.so|ca63c1b2c34bbde74c2b1fc6009ca244a1ffa535
+vendor/lib/libadsp_hvx_callback_skel.so|dc7080c68699f69f76260891ebcedcd68a093d40
+vendor/lib/libadsp_hvx_stub.so|4fa14ca235ace82551549b571f767f475fbf4b67
+vendor/lib/libadsprpc.so|756fc8ea0395866ee578030ac72fddedba288f97
+vendor/lib/libfastcvadsp_stub.so|7811d12d68ec3f9fcbd05f55264b6dcec61bc75b
+vendor/lib/libfastcvopt.so|d76563220d8d504a9dce1091a52482a8d932858d
+vendor/lib/libmdsprpc.so|e4f96f313d58eeb845e5f65815f0d5871cdabfbd
+vendor/lib/libsdsprpc.so|979a7a2a7bb5622d0ff404d0151536437c0c381b
+vendor/lib64/libadsp_default_listener.so|d28ea3a0509c13ff75c700efe1107bb2d2481eb6
+vendor/lib64/libadsprpc.so|66ac8f836101bc7563432d168890827d878acd42
+vendor/lib64/libfastcvadsp_stub.so|0cbdc83819780d8aa7cb8707633439db330b655d
+vendor/lib64/libfastcvopt.so|39423b9830f4eee217d9a4064a0c7449ff78acfb
+vendor/lib64/libmdsprpc.so|8b2040f7d12774157fcd82de35ddd73349fbfade
+vendor/lib64/libsdsprpc.so|fc1325b8e76a125f6608a0086712dba894151c11
+
+# ADSP modules
+vendor/etc/scve/facereco/gModel.dat|447e5e3fefe8bcf36db0f7a8595c63fb326879ba
+vendor/lib/rfsa/adsp/capi_v2_aptX_Classic.so|8305c614ebf13f84f15989631b8fdfdb9828d9be
+vendor/lib/rfsa/adsp/capi_v2_aptX_HD.so|eb0e912d25b06f977d5a89345c72d142b7ffb8ae
+vendor/lib/rfsa/adsp/dirac_resource.dar|828bf9058a3612697b746cf9a39e05389291ad6b
+vendor/lib/rfsa/adsp/libadsp_fd_skel.so|677d2932dac248049f031fc5893163e22b49439a
+vendor/lib/rfsa/adsp/libadsp_hvx_add_constant.so|26fb64a92d48e801a31a867976d325efa366a255
+vendor/lib/rfsa/adsp/libadsp_hvx_skel.so|05776246445316aea822eaa9cb6ae7a47b23c9aa
+vendor/lib/rfsa/adsp/libapps_mem_heap.so|fd362c6b0e30f62cc3fc4566855f46706d2c3c50
+vendor/lib/rfsa/adsp/libdirac-capiv2.so|e56031dfaee094d5267e3cc16625cfceaa07cc27
+vendor/lib/rfsa/adsp/libdspCV_skel.so|a788855fe98d5f6ea73d2693c983efb29165eae1
+vendor/lib/rfsa/adsp/libfastcvadsp.so|603711dc1af1f1952d8978a5b494b1541b24c54c
+vendor/lib/rfsa/adsp/libfastcvadsp_skel.so|a06a3f52e89d219d2da0c7205e714cd7429b267c
+vendor/lib/rfsa/adsp/libscveBlobDescriptor_skel.so|99752b14bc669589f598b2c555af96834147e41e
+vendor/lib/rfsa/adsp/libscveObjectSegmentation_skel.so|d2174a2a4a680e93ee4262b5e6d99fd3c398620c
+vendor/lib/rfsa/adsp/libscveT2T_skel.so|487f830aca26c85ef79c8b599b2f03668ab732b5
+vendor/lib/rfsa/adsp/libvpp_svc_skel.so|2da97f61c1d14f1f9a38aecd8ab89a1f6fa8d991
+
 # Alarm
 -vendor/app/PowerOffAlarm/PowerOffAlarm.apk|62c1df25f0725bd07f4d8465a57f573dacb2bbf3
 vendor/bin/hw/vendor.qti.hardware.alarm@1.0-service|1300f2aacbcd159a2587abc1f38031d9c1f1beed
@@ -15,6 +50,17 @@ lib64/com.qualcomm.qti.ant@1.0.so|33d353a1077c70c3d7c013938b092e93a18d5b58
 -lib64/libantradio.so|def8c83cab05b53fe70754f23cf475240a8358fd
 vendor/lib64/com.qualcomm.qti.ant@1.0.so|5779ba85ae23ede7552a768afb8042d72f71afe2
 vendor/lib64/hw/com.qualcomm.qti.ant@1.0-impl.so|94729946e6ba94dd5d24c0495661efadc7ab782e
+
+# Audio FX modules - from perseus-user 9 PKQ1.180729.001 V10.3.1.0.PEECNXM release-keys
+vendor/lib/soundfx/libasphere.so|0783283ac9f68d5ebbeef350adc9b66b3248449b
+vendor/lib/soundfx/libmisoundfx.so|569ee2df586e95116b79cfb3d89429f2032a7a76
+vendor/lib/soundfx/libqcbassboost.so|1722ba76b9e6922fca17ce9f538d71b3ae37d78e
+vendor/lib/soundfx/libqcreverb.so|fa8a59cc8dc376ba8903104ac36707e576280c24
+vendor/lib/soundfx/libqcvirt.so|c373619e800e379d3bc88bee9dacf80a87a4e0ca
+vendor/lib64/soundfx/libasphere.so|718aa55bf9a32cb77a6f5e8f33e776d30e2dadc9
+vendor/lib64/soundfx/libqcbassboost.so|1f9b4eca3f6b1fea872d90b943d2c434e25e0fa4
+vendor/lib64/soundfx/libqcreverb.so|d8ce60a46a0d20e21d3246742e08328606ddf960
+vendor/lib64/soundfx/libqcvirt.so|88349315d99cea68a3b766fa4c6e1181d26f561b
 
 # Bluetooth (aptX)
 product/lib64/libaptX_encoder.so|df1c89d7af1bb35808d5fe3496b04ba066c10cbc
@@ -124,6 +170,16 @@ vendor/lib/hw/vendor.qti.esepowermanager@1.0-impl.so|77bb8560f605e015b4b7f1468eb
 vendor/lib/vendor.qti.esepowermanager@1.0.so|0747a833e0c6943d1bdcbbb370f7145db428bc51
 vendor/lib64/hw/vendor.qti.esepowermanager@1.0-impl.so|074685bf48758830213b902e50c215a3a0d5dbfd
 vendor/lib64/vendor.qti.esepowermanager@1.0.so|bcdf6b26fdce85e7109eea798909f27c91a07791
+
+# Fido
+lib/libFidoCryptoJNI.so|16c2a50b7da470440032e51867f95653cb1c6406
+lib/libFidoCrypto_system.so|c538c239bb97553a4683662d6ed6567b3c5033cd
+lib64/libFidoCryptoJNI.so|bb9ee88f7696d5a66da2a0cd2daed429c274fd23
+lib64/libFidoCrypto_system.so|5f5254c97e4b4457e31da70843a004030411a8f3
+vendor/lib/libFidoCrypto_vendor.so|5911ca84a7beba33620c7468e03c685c32ea1a17
+vendor/lib64/libFidoCrypto_vendor.so|4cc8d054895e7eb78b35c42cbcf7d0184e9e88f4
+vendor/lib/libFIDOKeyProvisioning.so|35703aca065213fa86f095a557ae2dbebccfe336
+vendor/lib64/libFIDOKeyProvisioning.so|4df3293d1c62a5b1454d5162298a09a61d0d9c38
 
 # Hotword enrollment
 -priv-app/HotwordEnrollmentOKGoogleWCD9340/HotwordEnrollmentOKGoogleWCD9340.apk;PRESIGNED
